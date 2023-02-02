@@ -1,0 +1,19 @@
+//variables.
+    $esconder: none; 
+
+
+    //cor
+    $backgroundEscuro: #0b012a; 
+    $TextoCorEscuro: gainsboro ;
+//corpo 
+body {
+    background-color: $backgroundEscuro;
+    margin: 0;
+}
+
+.Esconder {
+    display: none;
+}
+.Aparecer {
+    display: flex !important;
+}

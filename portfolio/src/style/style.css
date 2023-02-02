@@ -1,0 +1,89 @@
+body {
+  background-color: #0b012a;
+  margin: 0;
+}
+
+.Esconder {
+  display: none;
+}
+
+.Aparecer {
+  display: flex !important;
+}
+
+body {
+  background-color: #0b012a;
+  margin: 0;
+}
+
+.Esconder {
+  display: none;
+}
+
+.Aparecer {
+  display: flex !important;
+}
+
+.Barras .div1Menu {
+  transform: translateY(9px);
+}
+
+.X .div1Menu {
+  transform: rotateZ(50deg);
+}
+.X .div2Menu {
+  transform: rotateZ(135deg);
+}
+
+.button-row {
+  margin: 1rem;
+}
+.button-row button {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button-row button div {
+  background-color: gainsboro;
+}
+.button-row nav {
+  display: -moz-flex;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.button-row nav li button {
+  border-radius: 10%;
+  font-size: 15px;
+}
+.button-row nav li button:hover {
+  transition-duration: 1s;
+  border-bottom: 1px solid red;
+}
+.button-row nav li button:hover a {
+  transition-duration: 1s;
+  font-size: 20px;
+}
+.button-row nav li button a {
+  color: gainsboro;
+  padding: 1rem;
+  text-decoration: none;
+}
+@media (max-width: 647px) {
+  .button-row button div {
+    width: 25px;
+    height: 3px;
+  }
+  .button-row li {
+    display: none;
+    background-color: black;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 30%;
+    padding: 35px 0 35px 0;
+    margin: 8%;
+    border-radius: 5%;
+  }
+}/*# sourceMappingURL=style.css.map */
