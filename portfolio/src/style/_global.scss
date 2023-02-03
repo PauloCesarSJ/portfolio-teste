@@ -4,11 +4,19 @@
 
     //cor
     $backgroundEscuro: #0b012a; 
-    $TextoCorEscuro: gainsboro ;
+    $TextoCorEscuro: #FFFBEB ;
+
+    $backgroundClaro: #FFFBEB;
+    $TextoCorClaro:#0b012a; 
+    
 //corpo 
 body {
-    background-color: $backgroundEscuro;
+    background-color: $backgroundClaro;
     margin: 0;
+}
+
+.Texto {
+    color: $TextoCorClaro;
 }
 
 .Esconder {

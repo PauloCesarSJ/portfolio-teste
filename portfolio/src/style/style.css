@@ -1,6 +1,10 @@
 body {
-  background-color: #0b012a;
+  background-color: #FFFBEB;
   margin: 0;
+}
+
+.Texto {
+  color: #0b012a;
 }
 
 .Esconder {
@@ -12,8 +16,12 @@ body {
 }
 
 body {
-  background-color: #0b012a;
+  background-color: #FFFBEB;
   margin: 0;
+}
+
+.Texto {
+  color: #0b012a;
 }
 
 .Esconder {
@@ -37,13 +45,14 @@ body {
 
 .button-row {
   margin: 1rem;
+  border-bottom: 1px solid #0b012a;
 }
 .button-row button {
   background-color: transparent;
   border-color: transparent;
 }
 .button-row button div {
-  background-color: gainsboro;
+  background-color: #0b012a;
 }
 .button-row nav {
   display: -moz-flex;
@@ -52,31 +61,33 @@ body {
   flex-wrap: wrap;
   gap: 1rem;
 }
-.button-row nav li button {
+.button-row nav ul button {
   border-radius: 10%;
   font-size: 15px;
 }
-.button-row nav li button:hover {
+.button-row nav ul button:hover {
   transition-duration: 1s;
   border-bottom: 1px solid red;
 }
-.button-row nav li button:hover a {
+.button-row nav ul button:hover a {
   transition-duration: 1s;
   font-size: 20px;
 }
-.button-row nav li button a {
-  color: gainsboro;
+.button-row nav ul button a {
   padding: 1rem;
   text-decoration: none;
 }
 @media (max-width: 647px) {
+  .button-row {
+    height: 25px;
+  }
   .button-row button div {
     width: 25px;
     height: 3px;
   }
-  .button-row li {
+  .button-row ul {
     display: none;
-    background-color: black;
+    background-color: #829460;
     position: absolute;
     flex-direction: column;
     justify-content: space-between;
@@ -85,5 +96,82 @@ body {
     padding: 35px 0 35px 0;
     margin: 8%;
     border-radius: 5%;
+  }
+}
+
+@-webkit-keyframes deslizaparaEsquerda {
+  from {
+    transform: translateX(-2px);
+  }
+  to {
+    transform: translateX(52px);
+  }
+}
+
+@keyframes deslizaparaEsquerda {
+  from {
+    transform: translateX(-2px);
+  }
+  to {
+    transform: translateX(52px);
+  }
+}
+@-webkit-keyframes deslizaparaDireita {
+  from {
+    transform: translateX(52px);
+  }
+  to {
+    transform: translateX(-2px);
+  }
+}
+@keyframes deslizaparaDireita {
+  from {
+    transform: translateX(52px);
+  }
+  to {
+    transform: translateX(-2px);
+  }
+}
+.DeslizaEsquerda {
+  -webkit-animation-name: deslizaparaEsquerda;
+          animation-name: deslizaparaEsquerda;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.DeslizaDireita {
+  -webkit-animation-name: deslizaparaDireita;
+          animation-name: deslizaparaDireita;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ButtonNoiteDia button {
+  margin: 1rem;
+  position: absolute;
+  width: 90px;
+  display: -moz-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.ButtonNoiteDia button div {
+  flex-direction: row;
+  background-color: transparent;
+  font-size: 20px;
+}
+.ButtonNoiteDia button samp {
+  position: absolute;
+  height: 25px;
+  width: 23px;
+  border-radius: 100px;
+  background-color: rgba(75, 73, 73, 0.136);
+}
+@media (max-width: 647px) {
+  .ButtonNoiteDia button {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

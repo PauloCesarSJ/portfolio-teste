@@ -37,12 +37,13 @@
 //para telas com with 648 para cima 
 .button-row {
     margin: 1rem;
+    border-bottom: 1px solid $TextoCorClaro;
     //button que abre o menu no modo de celular
     button{
         background-color: transparent;
         border-color: transparent;
         div{
-            background-color: $TextoCorEscuro;
+            background-color: $TextoCorClaro;
         }
     }
     //os links da menu
@@ -55,7 +56,7 @@
         flex-wrap: wrap;
         gap: 1rem;
         
-        li{
+        ul{
            
             button{
                 border-radius:10%;
@@ -70,7 +71,6 @@
                 }
     
                 a {
-                    color: $TextoCorEscuro;
                     padding: 1rem;
                     text-decoration: none;
                 }   
@@ -79,15 +79,16 @@
     }
 //para celular
     @media(max-width: 647px){
+        height: 25px;
         button{
             div{
                 width: 25px;
                 height: 3px;
             }
         }
-        li{ 
+        ul{ 
             display: none;
-            background-color: black;
+            background-color: #829460;
             position: absolute;
             -ms-flex-direction: column;
             flex-direction: column;

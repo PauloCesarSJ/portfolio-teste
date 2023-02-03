@@ -1,10 +1,10 @@
 import React from 'react';
-import Menu from './componentes/menu';
+import Home from './componentes/paginas/home';
 
 function App() {
   return (
     <div className="App">
-        <Menu/>
+        <Home/>
     </div>
   );
 }
