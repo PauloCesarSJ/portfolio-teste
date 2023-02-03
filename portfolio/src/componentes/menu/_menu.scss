@@ -37,7 +37,6 @@
 //para telas com with 648 para cima 
 .button-row {
     margin: 1rem;
-    border-bottom: 1px solid $TextoCorClaro;
     //button que abre o menu no modo de celular
     button{
         background-color: transparent;
@@ -60,13 +59,14 @@
            
             button{
                 border-radius:10%;
-                font-size: 15px;
+                font-size: 18px;
                 &:hover{
                     transition-duration: 1s;
-                    border-bottom: 1px solid red;
-                    a{
+                    background-color: blue;
+                    :first-child {
                         transition-duration: 1s;
                         font-size: 20px;
+                        color: white;
                     }
                 }
     

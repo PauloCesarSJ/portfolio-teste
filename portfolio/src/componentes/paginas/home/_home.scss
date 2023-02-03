@@ -1,0 +1,38 @@
+
+.Home{
+    #HomeSaudacao {
+        width: 60%;
+        margin: 10% 0 0 20%;
+        text-align: center;
+
+        h2{
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 30px;
+            height: 30px;
+            samp{
+                color: #FB2576;
+            }
+        }
+        h1{
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 40px;
+        }
+    }
+    #HomePort{
+        margin: 20% 10% 0 10%;
+        text-align: center;
+        h2{
+            font-size: 30px;
+            font-family: "Roboto";
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        img{
+            margin-left: 20px;
+            width: 25%;
+        }
+    }
+    
+}

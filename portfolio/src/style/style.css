@@ -1,5 +1,5 @@
 body {
-  background-color: #FFFBEB;
+  background-color: #F7F5EB;
   margin: 0;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  background-color: #FFFBEB;
+  background-color: #F7F5EB;
   margin: 0;
 }
 
@@ -45,7 +45,6 @@ body {
 
 .button-row {
   margin: 1rem;
-  border-bottom: 1px solid #0b012a;
 }
 .button-row button {
   background-color: transparent;
@@ -63,15 +62,16 @@ body {
 }
 .button-row nav ul button {
   border-radius: 10%;
-  font-size: 15px;
+  font-size: 18px;
 }
 .button-row nav ul button:hover {
   transition-duration: 1s;
-  border-bottom: 1px solid red;
+  background-color: blue;
 }
-.button-row nav ul button:hover a {
+.button-row nav ul button:hover :first-child {
   transition-duration: 1s;
   font-size: 20px;
+  color: white;
 }
 .button-row nav ul button a {
   padding: 1rem;
@@ -174,4 +174,38 @@ body {
   .ButtonNoiteDia button {
     margin: 0;
   }
+}
+
+.Home #HomeSaudacao {
+  width: 60%;
+  margin: 10% 0 0 20%;
+  text-align: center;
+}
+.Home #HomeSaudacao h2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 30px;
+  height: 30px;
+}
+.Home #HomeSaudacao h2 samp {
+  color: #FB2576;
+}
+.Home #HomeSaudacao h1 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 40px;
+}
+.Home #HomePort {
+  margin: 20% 10% 0 10%;
+  text-align: center;
+}
+.Home #HomePort h2 {
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.Home #HomePort img {
+  margin-left: 20px;
+  width: 25%;
 }/*# sourceMappingURL=style.css.map */
