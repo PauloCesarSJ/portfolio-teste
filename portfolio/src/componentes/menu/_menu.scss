@@ -36,7 +36,7 @@
 
 //para telas com with 648 para cima 
 .button-row {
-    margin: 1rem;
+    margin: 2rem;
     //button que abre o menu no modo de celular
     button{
         background-color: transparent;
@@ -65,20 +65,22 @@
                     background-color: blue;
                     :first-child {
                         transition-duration: 1s;
-                        font-size: 20px;
+                        font-size: 25px;
                         color: white;
                     }
                 }
-    
                 a {
+                    font-size: 20px;
                     padding: 1rem;
                     text-decoration: none;
+                    font-family: "Roboto";
+                    font-weight: 400;
                 }   
             }
         }
     }
 //para celular
-    @media(max-width: 647px){
+    @media(max-width: 758px){
         height: 25px;
         button{
             div{
