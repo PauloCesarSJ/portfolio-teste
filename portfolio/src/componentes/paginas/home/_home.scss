@@ -1,5 +1,6 @@
 
 .Home{
+    //
     #HomeSaudacao {
         width: 70%;
         margin: 10% 0 0 15%;
@@ -19,6 +20,7 @@
             font-size: 50px;
         }
     }
+    //
     #HomePort{
         margin: 20% 10px 0 10px;
         text-align: center;
@@ -45,11 +47,26 @@
                 font-size:25px ;
             }
         }
+        //
         #HomePort{
             div{
                 flex-direction: column;
                 align-items: center;
             }
+        }
+    }
+    #HomeEu{
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 5rem;
+        div{
+            font-family: "Roboto";
+            font-weight: 400;
+            width:45% ;
+            font-size: 25px;
         }
     }
 }

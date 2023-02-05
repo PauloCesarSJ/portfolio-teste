@@ -28,10 +28,10 @@ function MudaEstadosMenu(){
             <ButtonNoiteDia/> 
             <nav>
                 <ul className={Estado}>
-                    <button><a className="Texto" href="/">INICIO</a></button>      
-                    <button><a className="Texto" href="/">PROJETOS</a></button>     
-                    <button><a className="Texto" href="/">SOBRE MIM</a></button>      
-                    <button><a className="Texto" href="/">CONTATOS</a></button>
+                    <button><a className="Texto" href="/INICIO">INICIO</a></button>      
+                    <button><a className="Texto" href="/PROJETOS">PROJETOS</a></button>     
+                    <button><a className="Texto" href="/SOBREMIM">SOBRE MIM</a></button>      
+                    <button><a className="Texto" href="/CONTATOS">CONTATOS</a></button>
                 </ul>
                     <button className={Icons} onClick={MudaEstadosMenu} >
                         <div className="div1Menu"/>

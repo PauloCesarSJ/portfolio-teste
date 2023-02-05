@@ -224,4 +224,16 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+.Home #HomeEu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 5rem;
+}
+.Home #HomeEu div {
+  font-family: "Roboto";
+  font-weight: 400;
+  width: 45%;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */

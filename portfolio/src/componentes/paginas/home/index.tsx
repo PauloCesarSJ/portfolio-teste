@@ -1,6 +1,5 @@
 import React from 'react';
 import Menu from '../../menu';
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 function Home() {
 
@@ -17,7 +16,7 @@ function Home() {
                 </div>
                 <div id='HomePort'>
                     <div>
-                        <img src="img/construcao.png" alt="Em construção" id='imgMenuPort1' /> 
+                       <a href="#/WikimediaApi"><img src="img/construcao.png" alt="Em construção" id='imgMenuPort1'/> </a> 
                         <img src="img/construcao.png" alt="Em construção" id='imgMenuPort2' /> 
                         <img src="img/construcao.png" alt="Em construção" id='imgMenuPort3' /> 
                         <img src="img/construcao.png" alt="Em construção" id='imgMenuPort4' /> 
@@ -38,7 +37,7 @@ function Home() {
                         </p>
                         <p>
                             Meus conhecimentos na área de desenvolvimento web são  html,
-                            css, javascript,Typescript ,react, sass, git e alguns conhecimentos teóricos, conhecimento básico
+                            css, javascript,Typescript,react,react native, sass, git e alguns conhecimentos teóricos, conhecimento básico
                             de edição de imagens e vídeos também podem ser considerados, e o domínio da
                             língua inglesa, poder ser melhor vistos na área do meus projetos.
                         </p>
@@ -46,7 +45,6 @@ function Home() {
                     <img src="img/eu.png" alt="" />
                 </div>
             </div>
-           
         </div>
     )
 }
