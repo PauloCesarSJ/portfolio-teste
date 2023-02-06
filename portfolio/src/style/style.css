@@ -1,1 +1,8 @@
-/*# sourceMappingURL=style.css.map */
+.Menu {
+  background-color: wheat;
+  display: flex;
+}
+
+.darkMode {
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
