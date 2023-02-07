@@ -1,6 +1,50 @@
 .Menu{
-    background-color: wheat;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    font-size: 20px;
+    button{
+        display: none;
+    }
+    nav{
+        text-transform: uppercase;
+        a{
+            justify-content: space-between;
+            padding: 0.5rem;
+            &:hover{
+                transition-duration: 2s;
+                background-color: rgba(77, 77, 245, 0.949);
+                color: #fff;
+                
+            }
+        }
+    }
+    //* mobile
+    @media (max-width: 768px) {
+        margin: 2em;
+        width: 70%;
+        button{
+            display: -webkit-flex !important;
+            display: -ms-flexbox !important;
+            display:flex !important;
+        }
+        nav{
+            display: none;
+            position: absolute;
+            margin: 3rem 0 0 25%;
+            padding: 4em;
+            background-color: darkslategray;
+            a{
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column;   
+            align-items: center;
+            margin: 10px;
+            }
+
+        }
+    }
 }

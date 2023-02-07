@@ -2,6 +2,17 @@
 
 .darkMode{
      background-color: black;
+     .text{
+          color:white;
+     }
 }
 
+.text{
+     font-family: Nunito;
+     text-decoration: none;
+     color: black;
+}
 
+.abarecer{
+     display: flex !important;
+}
