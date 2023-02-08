@@ -5,7 +5,19 @@
      .text{
           color:white;
      }
+     #buttonDarkMode{
+          display: none !important;
+      }
 }
+.lightmode{
+     
+      #buttonLightmode{
+          display: none !important;
+          border: none !important;
+          background-color: white;
+     }
+}
+
 
 .text{
      font-family: Nunito;
@@ -15,4 +27,8 @@
 
 .abarecer{
      display: flex !important;
+}
+
+.sumir{
+     display: none!important;
 }

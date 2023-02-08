@@ -8,18 +8,19 @@ function BUttondark () {
 
     useEffect(() => {
         document.body.className = mode;
-    }, [mode])
+    }, [mode]
+    
+    )
 
     function ToggleMode(event:any) {
         setmode(event.target.value);
+        console.log(mode)
     }
 
     return (
-        <div>
-            <select onChange={ToggleMode} >
-                <option onSelect={ToggleMode} selected value="darkMode">darkMode</option>
-                <option onSelect={ToggleMode} selected value="lightmode">lightmode</option>
-            </select>
+        <div className="BUttondark">
+            <button className="text" id="buttonDarkMode" onClick={ToggleMode} value="darkMode">lua</button>
+            <button className="text" id="buttonLightmode" onClick={ToggleMode} value="lightmode">sol</button>
         </div>
     )
 }

@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import BUttondark from "./darkMode/darkButtom";
+import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 
 
 
 function Menu () {
     const [Estado, setEstado] = useState("")
-    
+    const [Icone, setIcone] = useState("")
+
+
     function Abremenu () {
         if (Estado === ""){
             setEstado("abarecer")
+            setIcone("sumir")
         }else{
             setEstado("")
+            setIcone("")
         }
     }
 
@@ -25,7 +30,10 @@ function Menu () {
                 <a href="/" className="text">sobre</a>
                 </div>
             </nav> 
-            <button onClick={Abremenu}><div/><div/></button>
+            <button onClick={Abremenu}>
+                <div className={Icone} id="menuAberto"><AiOutlineMenu className="text"/></div>
+                <div className={Estado} id="menuClose"><AiOutlineClose className="text"/></div>
+            </button>
         </div>
     )
 }

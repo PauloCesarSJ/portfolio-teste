@@ -26,12 +26,17 @@
   }
   .Menu button {
     display: flex !important;
+    background-color: transparent;
+    font-size: 15px;
+  }
+  .Menu button #menuClose {
+    display: none;
   }
   .Menu nav {
     display: none;
     position: absolute;
-    margin: 3rem 0 0 25%;
-    padding: 4em;
+    margin: 3rem 0 0 24%;
+    padding: 3em;
     background-color: darkslategray;
   }
   .Menu nav a {
@@ -48,6 +53,15 @@
 .darkMode .text {
   color: white;
 }
+.darkMode #buttonDarkMode {
+  display: none !important;
+}
+
+.lightmode #buttonLightmode {
+  display: none !important;
+  border: none !important;
+  background-color: white;
+}
 
 .text {
   font-family: Nunito;
@@ -57,6 +71,10 @@
 
 .abarecer {
   display: flex !important;
+}
+
+.sumir {
+  display: none !important;
 }
 
 #homeEu {
@@ -92,15 +110,18 @@
 
 #homeTrabalhos {
   margin-top: 9em;
-  margin-left: 9%;
+  margin-left: 3%;
   width: 90vw;
   height: 90vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+#homeTrabalhos button {
+  display: none;
+}
 #homeTrabalhos samp {
-  background-color: red;
+  background-color: rgb(101, 152, 13);
   margin: 1rem;
   width: 15rem;
   height: 20rem;
@@ -111,10 +132,44 @@
 }
 @media (max-width: 767px) {
   #homeTrabalhos {
-    margin-top: 30vh;
+    margin-top: 11vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 95vh;
+  }
+  #homeTrabalhos samp {
+    margin: 1em;
+    display: flex;
+    width: 20rem;
+    height: 10rem;
+  }
+  #homeTrabalhos button {
+    display: flex;
+    width: 10%;
   }
 }
 
-#homeSobremim {
-  display: none;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+}
+.footer div {
+  margin: 3rem;
+}
+.footer div p {
+  color: rgb(158, 153, 153);
+}
+.footer div a button {
+  margin: 1rem;
+  font-size: 25px;
+}
+@media (min-width: 762px) {
+  .footer {
+    margin-top: 10vh;
+  }
+  .footer div {
+    background-color: red;
+    margin-top: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */

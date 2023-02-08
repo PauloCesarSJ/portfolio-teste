@@ -1,0 +1,27 @@
+.footer{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+    div{
+        margin: 3rem;
+        p{
+            color: rgb(158, 153, 153);
+        }
+        a{
+            button{
+                margin: 1rem;
+                font-size: 25px;
+            }
+        }
+    }
+    @media(min-width:762px){
+        margin-top: 10vh;
+        div{
+            background-color: red;
+            margin-top: 30%;
+            
+        }
+    }
+}

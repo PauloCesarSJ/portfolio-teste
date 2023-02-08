@@ -35,7 +35,7 @@
 }
 #homeTrabalhos{
     margin-top: 9em;
-    margin-left: 9%;
+    margin-left: 3%;
     width: 90vw;
     height: 90vh;  
     display: -webkit-flex;
@@ -43,8 +43,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    button{
+        display: none;
+    }
     samp{
-        background-color: red;
+        background-color: rgb(101, 152, 13);
         margin: 1rem;
         width: 15rem;
         height: 20rem;
@@ -53,13 +56,23 @@
             display: -ms-flexbox;
             display: flex;
             justify-content: center;
-        }
+        }  
     }
     @media(max-width:767px) {
-      margin-top: 30vh;
-        
+        margin-top: 11vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 95vh;
+      samp{
+        margin: 1em;
+        display: flex;
+        width: 20rem;
+        height: 10rem;
+      }
+      button{
+        display: flex;
+        width: 10%;
+      }
+    
     }
-}
-#homeSobremim{
-display: none;
 }
