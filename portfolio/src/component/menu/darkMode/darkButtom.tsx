@@ -14,7 +14,6 @@ function BUttondark () {
 
     function ToggleMode(event:any) {
         setmode(event.target.value);
-        console.log(mode)
     }
 
     return (

@@ -30,7 +30,7 @@ function Menu () {
                 <a href="/" className="text">sobre</a>
                 </div>
             </nav> 
-            <button onClick={Abremenu}>
+            <button onClick={Abremenu} className="buttonMenu">
                 <div className={Icone} id="menuAberto"><AiOutlineMenu className="text"/></div>
                 <div className={Estado} id="menuClose"><AiOutlineClose className="text"/></div>
             </button>
