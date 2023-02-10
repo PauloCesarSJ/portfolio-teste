@@ -31,7 +31,7 @@
   .Menu button {
     display: flex !important;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 20px;
   }
   .Menu button #menuClose {
     display: none;
@@ -75,7 +75,6 @@
 
 .aparecer {
   display: flex !important;
-  position: relative !important;
 }
 
 .sumir {
@@ -83,6 +82,7 @@
 }
 
 #homeEu {
+  margin-top: 25em;
   margin-left: 20%;
   width: 60vw;
   height: 70vh;
@@ -104,7 +104,15 @@
   font-size: 35px;
   text-transform: uppercase;
 }
+@media (max-width: 896px) {
+  #homeEu {
+    margin-top: 39em;
+  }
+}
 @media (max-width: 767px) {
+  #homeEu {
+    margin-top: 10em;
+  }
   #homeEu h3 {
     font-size: 15px;
   }
@@ -114,12 +122,11 @@
 }
 
 #homeTrabalhos {
-  margin-top: 9em;
-  margin-left: 3%;
   width: 90vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 15rem;
 }
 #homeTrabalhos button {
   display: none;
@@ -139,29 +146,34 @@
 }
 @media (max-width: 767px) {
   #homeTrabalhos {
-    margin-top: 11vh;
     flex-direction: column;
-    width: 60vh;
-    height: 90vh;
+    margin: 1rem;
+  }
+  #homeTrabalhos #samphome1 {
+    margin-bottom: 17em;
+  }
+  #homeTrabalhos #samphome3 {
+    margin-top: 17em;
   }
   #homeTrabalhos samp {
-    margin: 1em;
+    position: absolute;
     height: 5rem;
     display: none;
   }
   #homeTrabalhos button {
+    margin-top: 1rem;
     display: flex;
     width: 10%;
     background-color: transparent;
-    border: none;
     font-size: 25px;
   }
 }
 
 .footer {
+  margin-top: 90vh;
   display: flex;
   justify-content: space-between;
-  height: 20rem;
+  height: 10rem;
 }
 .footer div {
   margin: 3rem;
@@ -170,15 +182,25 @@
   color: rgb(158, 153, 153);
 }
 .footer div a button {
+  background-color: transparent;
+  border: none;
   margin: 1rem;
   font-size: 25px;
 }
-@media (min-width: 762px) {
+.footer div a button:hover {
+  transition-delay: 1s;
+  background-color: grey;
+}
+@media (max-width: 762px) {
   .footer {
-    margin-top: 10vh;
+    margin-top: 35vh;
+    display: block;
   }
-  .footer div {
-    background-color: red;
-    margin-top: 30%;
+  .footer p {
+    font-size: 15px;
+  }
+  .footer div a button {
+    margin: 10apx;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

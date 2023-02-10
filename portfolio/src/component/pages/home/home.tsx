@@ -34,6 +34,7 @@ function AbrirTrabalhosMobile (event:any) {
         <div >
             <Menu/>
             <div id="homeEu">
+                <div>
                 <h3 className="text">ola eu sou o <div>PAULO</div></h3>
                 <h2 className="text">
                     Sou um front end developer, sou apaixonado por tecnologia 
@@ -43,18 +44,19 @@ function AbrirTrabalhosMobile (event:any) {
             <div id="homeTrabalhos">
                 <button className="text" onClick={AbrirTrabalhosMobile} value="primeiro">x</button>
 
-                <samp className={Estado1}><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
+                <samp className={Estado1} id="samphome1"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
                 
                 <button className="text" onClick={AbrirTrabalhosMobile} value="segundo">x</button>
                 
-                <samp className={Estado2}><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
+                <samp className={Estado2}  id="samphome2"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
                 
                 <button className="text" onClick={AbrirTrabalhosMobile} value="terceiro">x</button>
                 
-                <samp className={Estado3}><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
+                <samp className={Estado3}  id="samphome3"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
             </div>
             <div className="homeFooter">
             </div>
+                </div> 
             <div>
                 <Footer/>
             </div>

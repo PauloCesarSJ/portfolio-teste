@@ -11,7 +11,7 @@ function Menu () {
 
     function Abremenu () {
         if (Estado === ""){
-            setEstado("abarecer")
+            setEstado("aparecer")
             setIcone("sumir")
         }else{
             setEstado("")

@@ -1,9 +1,10 @@
 .footer{
+    margin-top: 90vh;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-    height: 20rem;
+    height: 10rem;
     div{
         margin: 3rem;
         p{
@@ -11,17 +12,31 @@
         }
         a{
             button{
+                background-color: transparent;
+                border: none;
                 margin: 1rem;
                 font-size: 25px;
+                &:hover{
+                    transition-delay: 1s;
+                    background-color: grey;
+                }
             }
         }
     }
-    @media(min-width:762px){
-        margin-top: 10vh;
-        div{
-            background-color: red;
-            margin-top: 30%;
-            
+    @media(max-width:762px){
+        margin-top: 35vh; 
+        display: block;
+        p{
+            font-size: 15px;
         }
+      div{
+        a{
+            button{
+                margin: 10apx;
+                font-size:15px;
+              
+            }
+        }
+      }
     }
 }
