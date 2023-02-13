@@ -8,7 +8,7 @@
     div{
         margin: 3rem;
         p{
-            color: rgb(158, 153, 153);
+            color: rgb(199, 196, 196);
         }
         a{
             button{
@@ -17,8 +17,8 @@
                 margin: 1rem;
                 font-size: 25px;
                 &:hover{
-                    transition-delay: 1s;
-                    background-color: grey;
+                    transition-delay: 0.5s;
+                    background-color: rgba(154, 151, 151, 0.274);
                 }
             }
         }

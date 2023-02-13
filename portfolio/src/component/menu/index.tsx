@@ -26,7 +26,7 @@ function Menu () {
                 <div>
                 <a href="/" className="text">home</a>
                 <a href="/" className="text">projetos</a>
-                <a href="/" className="text">contato</a>
+                <a href="/Contato" className="text">contato</a>
                 <a href="/" className="text">sobre</a>
                 </div>
             </nav> 

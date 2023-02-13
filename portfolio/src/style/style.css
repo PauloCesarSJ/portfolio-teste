@@ -179,7 +179,7 @@
   margin: 3rem;
 }
 .footer div p {
-  color: rgb(158, 153, 153);
+  color: rgb(199, 196, 196);
 }
 .footer div a button {
   background-color: transparent;
@@ -188,8 +188,8 @@
   font-size: 25px;
 }
 .footer div a button:hover {
-  transition-delay: 1s;
-  background-color: grey;
+  transition-delay: 0.5s;
+  background-color: rgba(154, 151, 151, 0.274);
 }
 @media (max-width: 762px) {
   .footer {
