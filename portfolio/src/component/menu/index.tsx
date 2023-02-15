@@ -25,9 +25,9 @@ function Menu () {
             <nav className={Estado}>
                 <div>
                 <a href="/" className="text">home</a>
-                <a href="/" className="text">projetos</a>
+                <a href="/Projetos" className="text">projetos</a>
                 <a href="/Contato" className="text">contato</a>
-                <a href="/" className="text">sobre</a>
+                <a href="/SobreMim" className="text">sobre</a>
                 </div>
             </nav> 
             <button onClick={Abremenu} className="buttonMenu">

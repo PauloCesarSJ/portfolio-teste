@@ -18,6 +18,7 @@ function BUttondark () {
 
     return (
         <div className="BUttondark">
+            
             <button className="text" id="buttonDarkMode" onClick={ToggleMode} value="darkMode">lua</button>
             <button className="text" id="buttonLightmode" onClick={ToggleMode} value="lightmode">sol</button>
         </div>

@@ -58,10 +58,12 @@
   color: white;
 }
 .darkMode #buttonDarkMode {
+  font-size: 20px;
   display: none !important;
 }
 
 .lightmode #buttonLightmode {
+  font-size: 20px;
   display: none !important;
   border: none !important;
   background-color: white;
@@ -82,37 +84,30 @@
 }
 
 #homeEu {
-  margin-top: 25em;
-  margin-left: 20%;
-  width: 60vw;
-  height: 70vh;
+  width: 100%;
+  height: 30em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 #homeEu h3 {
-  font-size: 30px;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #homeEu h3 div {
   margin-left: 7px;
   color: rgb(252, 161, 176);
 }
 #homeEu h2 {
+  margin: 0rem 25%;
+  justify-content: center;
+  align-items: center;
   font-size: 35px;
   text-transform: uppercase;
 }
-@media (max-width: 896px) {
-  #homeEu {
-    margin-top: 39em;
-  }
-}
 @media (max-width: 767px) {
-  #homeEu {
-    margin-top: 10em;
-  }
   #homeEu h3 {
     font-size: 15px;
   }
@@ -122,19 +117,18 @@
 }
 
 #homeTrabalhos {
-  width: 90vw;
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 15rem;
 }
 #homeTrabalhos button {
   display: none;
+  border: none;
 }
 #homeTrabalhos samp {
   margin: 5rem;
   width: 15rem;
-  height: 10rem;
 }
 #homeTrabalhos samp a {
   display: flex;
@@ -157,11 +151,11 @@
   }
   #homeTrabalhos samp {
     position: absolute;
-    height: 5rem;
+    height: 4rem;
     display: none;
   }
   #homeTrabalhos button {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     width: 10%;
     background-color: transparent;
@@ -170,7 +164,7 @@
 }
 
 .footer {
-  margin-top: 90vh;
+  margin-top: 10%;
   display: flex;
   justify-content: space-between;
   height: 10rem;
@@ -187,20 +181,46 @@
   margin: 1rem;
   font-size: 25px;
 }
-.footer div a button:hover {
-  transition-delay: 0.5s;
-  background-color: rgba(154, 151, 151, 0.274);
-}
 @media (max-width: 762px) {
   .footer {
     margin-top: 35vh;
     display: block;
   }
-  .footer p {
-    font-size: 15px;
-  }
   .footer div a button {
-    margin: 10apx;
-    font-size: 15px;
+    font-size: 20px;
   }
+}
+
+.Contato {
+  display: block;
+  margin: 0 30%;
+}
+.Contato div {
+  display: block;
+  text-align: center;
+  margin: 5rem 0;
+  text-transform: uppercase;
+}
+.Contato div a {
+  display: block;
+  text-align: center;
+}
+.Contato div a button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 25px;
+}
+.Contato div a button:hover {
+  cursor: pointer;
+}
+
+.SobreMim {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.SobreMim div {
+  display: flex;
+  margin: 0 8rem;
 }/*# sourceMappingURL=style.css.map */
