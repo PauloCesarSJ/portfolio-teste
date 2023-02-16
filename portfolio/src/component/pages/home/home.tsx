@@ -46,7 +46,7 @@ function AbrirTrabalhosMobile (event:any) {
                 <div id="homeTrabalhos">
                     <button className="text" onClick={AbrirTrabalhosMobile} value="primeiro">x</button>
 
-                    <samp className={Estado1} id="samphome1"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
+                    <samp className={Estado1} id="samphome1"><a  href="/Projetos/fakeStore"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
 
                     <button className="text" onClick={AbrirTrabalhosMobile} value="segundo">x</button>
 

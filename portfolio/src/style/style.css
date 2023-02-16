@@ -223,4 +223,37 @@
 .SobreMim div {
   display: flex;
   margin: 0 8rem;
+}
+
+.FakeStore {
+  display: flex;
+  flex-direction: column;
+}
+.FakeStore div {
+  text-align: center;
+}
+.FakeStore div img {
+  width: 85%;
+  height: 30rem;
+}
+.FakeStore ul {
+  margin: 3.5rem 0;
+}
+.FakeStore ul img {
+  width: 25%;
+}
+
+.MenuStore {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.MenuStore button {
+  margin: 1rem;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+.MenuStore button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

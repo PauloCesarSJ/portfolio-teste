@@ -1,0 +1,17 @@
+.FakeStore {
+    display: flex;
+    flex-direction: column;
+    div{
+        text-align: center;
+        img{
+            width: 85%;
+            height: 30rem;
+        }
+    }
+    ul{
+        margin: 3.5rem 0;
+        img{
+            width:25%;
+        }
+    }
+}
