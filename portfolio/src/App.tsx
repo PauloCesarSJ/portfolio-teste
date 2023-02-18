@@ -19,21 +19,21 @@ export function App() {
 
  return (
   <div>
-    {data?.map(repo=> {
-      return (
         <Routes>
         <Route path="" element={<Home/>} />;
         <Route path="/Projetos" element={<Projetos/>} />;
         <Route path="/Contato" element={<Contato/>} />;
         <Route path="/SobreMim" element={<SobreMim/>} />;
         <Route path="/projetos/fakeStore" element={<FakeStoreManager/>}/>;
-        <Route path={`/Projetos/fakeStore/pagina/${repo.title}`} element={<PaginasLoja/>} />
-      </Routes>
-      )
-    })}
-   
+        {data?.map(repo=> {
+        return (
+            <Route path={`/Projetos/fakeStore/pagina/${repo.id}`} element={<PaginasLoja/>} />
+
+        )
+        })}
+        </Routes>
   </div>
-    
+
   );
 }
 

@@ -1,21 +1,26 @@
 import axios from "axios";
 import { useQuery } from "react-query";
-import { Routes, Route } from "react-router";
 import Footer from "../../footer";
 import MenuStore from "./menuStore";
-import PaginasLoja from "./paginasLoja";
 import { Repository } from "./index";
+import { useEffect } from "react";
+import { ButtonFakeStore } from "./buttonPagina";
 
 
 export  function FakeStore () {
+
+
     const {data, isFetching} = useQuery<Repository[]>("repos", async () => {
         const response = await axios.get("https://fakestoreapi.com/products/");
-
         return response.data;
     } ) 
+
+    
+
+
+
     return (
         <div>
-       
             <MenuStore/>
             <div>
                 <ul className="FakeStore">
@@ -27,10 +32,10 @@ export  function FakeStore () {
                         return (
                             <div>
                             <ul key={repo.id} > 
-                                <a href={`/Projetos/fakeStore/pagina/${repo.title}`}>teste</a>
-                                <img src={repo.image} alt={repo.description} />
-                                <p  className="text" >{repo.title}</p>  
-                                <p  className="text" >{repo.price}</p>
+                            <ButtonFakeStore/>
+                                <img src={repo.image} alt={repo.description}  key={repo.image} />
+                                <p  className="text"  key={repo.title} >{repo.title}</p>  
+                                <p  className="text"  key={repo.price}>{repo.price}</p>
                             </ul>
                             </div>
                         )
@@ -42,4 +47,12 @@ export  function FakeStore () {
     )
 }
 
+
+function UserLocalStorageState(arg0: string, arg1: string): [any, any] {
+    throw new Error("Function not implemented.");
+}
+
+function setmode(value: any) {
+    throw new Error("Function not implemented.");
+}
 

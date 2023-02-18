@@ -1,6 +1,3 @@
-import axios from "axios";
-import React from "react";
-import { useQuery } from "react-query";
 import { FakeStore } from "./FakeStore";
 
 
@@ -15,10 +12,10 @@ export  type Repository = {
 
 
 export function FakeStoreManager () {
-    
+
 
 return (
-    <div>
+    <div>       
         <FakeStore/>
     </div>
 )
