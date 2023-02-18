@@ -6,14 +6,14 @@ import UserLocalStorageState from "../../menu/darkMode";
 
 
 
- 
+
 export function ButtonFakeStore() {
     const {data} = useQuery<Repository[]>("repos", async () => {
         const response = await axios.get("https://fakestoreapi.com/products/");
-        
+
         return response.data;
     } ) 
-    
+
     const [page,setpage] = UserLocalStorageState("page", 1,)
 
     useEffect(() => {
@@ -22,10 +22,10 @@ export function ButtonFakeStore() {
 
     function PageCont(event:any) {
         setpage(event.target.value);
-        
+
     }
-   
-        
+
+
 
 
 
