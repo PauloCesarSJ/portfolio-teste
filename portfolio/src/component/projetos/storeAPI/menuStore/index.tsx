@@ -5,7 +5,7 @@ function MenuStore () {
 
     return(
         <div className="MenuStore">
-            <h3  className="text">fake store</h3>
+            <h3  ><a href="/Projetos/fakeStore/" className="text">fake store</a></h3>
             <div>
                 <button>Homens</button>
                 <button>Mulheres</button>

@@ -4,7 +4,8 @@ import Footer from "../../footer";
 import MenuStore from "./menuStore";
 import { Repository } from "./index";
 import { useEffect } from "react";
-import { ButtonFakeStore } from "./buttonPagina";
+import UserLocalStorageState from "../../menu/darkMode";
+
 
 
 export  function FakeStore () {
@@ -16,6 +17,27 @@ export  function FakeStore () {
     } ) 
 
     
+
+
+
+
+    const [page,setpage] = UserLocalStorageState("page", 1,)
+
+    useEffect(() => {
+    }, [page] 
+    )
+
+    function PageCont(event:any) {
+        setpage(event.target.value);
+
+    }
+
+
+
+
+
+
+
 
 
 
@@ -31,11 +53,16 @@ export  function FakeStore () {
                     {data?.map(repo => {
                         return (
                             <div>
-                            <ul key={repo.id} > 
-                            <ButtonFakeStore/>
+                            <ul key={repo.id} >                                       
                                 <img src={repo.image} alt={repo.description}  key={repo.image} />
                                 <p  className="text"  key={repo.title} >{repo.title}</p>  
                                 <p  className="text"  key={repo.price}>{repo.price}</p>
+                                <a key={repo.id} href={`/Projetos/fakeStore/pagina/${repo.id}`}>
+                                    <button className="text" key={repo.id} onClick={PageCont} 
+                                    value={repo.id} >
+                                        loja
+                                    </button> 
+                                </a>
                             </ul>
                             </div>
                         )
@@ -48,11 +75,4 @@ export  function FakeStore () {
 }
 
 
-function UserLocalStorageState(arg0: string, arg1: string): [any, any] {
-    throw new Error("Function not implemented.");
-}
-
-function setmode(value: any) {
-    throw new Error("Function not implemented.");
-}
 
