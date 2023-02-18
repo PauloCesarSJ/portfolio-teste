@@ -26,8 +26,10 @@ function PaginasLoja () {
 
     return (
         <div className='paginaLoja'>
-             <h1>{array?.id}</h1>
              <h2>{array?.title}</h2>
+             <img src={array?.image} alt={array?.description} />
+             <p>${array?.price}</p>
+             <p>{array?.description}</p>
         </div>
     )
 }
