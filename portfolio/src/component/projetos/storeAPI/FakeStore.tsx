@@ -49,16 +49,17 @@ export  function FakeStore () {
                     <div>
                         <img src="/img/capsulewardrobeforminimalist.png" alt="Banner-minimalista-roupas" />
                     </div>
+                    <div id="card-loja">
                     {isFetching && <p  className="text">...Fetching...</p>}
                     {data?.map(repo => {
                         return (
-                            <div>
+                            <div >
                             <ul key={repo.id} >                                       
                                 <img src={repo.image} alt={repo.description}  key={repo.image} />
                                 <p  className="text"  key={repo.title} >{repo.title}</p>  
-                                <p  className="text"  key={repo.price}>{repo.price}</p>
-                                <a key={repo.id} href={`/Projetos/fakeStore/pagina/${repo.id}`}>
-                                    <button className="text" key={repo.id} onClick={PageCont} 
+                                <p  className="text"  key={repo.price}>${repo.price}</p>
+                                <a  key={repo.id} href={`/Projetos/fakeStore/pagina/${repo.id}`}>
+                                    <button id="lojaBUtton" className="text"  key={repo.id} onClick={PageCont} 
                                     value={repo.id} >
                                         loja
                                     </button> 
@@ -67,6 +68,7 @@ export  function FakeStore () {
                             </div>
                         )
                     })}
+                    </div>
                 </ul>    
             </div>
             <Footer/>

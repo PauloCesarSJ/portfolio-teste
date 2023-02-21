@@ -15,4 +15,15 @@
             cursor: pointer;
         }
     }
+    @media(max-width: 770px) {
+        flex-direction: column !important;
+        h3{
+            a{
+                font-size: 15px;
+            }
+        }
+        button{
+            margin: 1% !important;
+        }
+    }
 }

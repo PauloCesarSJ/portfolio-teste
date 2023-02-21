@@ -12,10 +12,7 @@ function MenuStore () {
                 <button>Crianças</button>
                 <button>Promação</button>
             </div>
-            <div>
-                <button >lupa</button>
-                <button>carrinho</button>
-            </div>
+            
         </div>
     )
 }

@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 import { Repository } from '..';
 import Footer from '../../../footer';
-import Menu from '../../../menu';
 import MenuStore from '../menuStore';
 
 
@@ -30,10 +29,14 @@ function PaginasLoja () {
         <div>
             <MenuStore/>
         <div className='paginaLoja'>
-             <h2>{array?.title}</h2>
-             <img src={array?.image} alt={array?.description} />
-             <p>${array?.price}</p>
-             <p>{array?.description}</p>
+                <img src={array?.image} alt={array?.description} />
+            <div>
+                <h2 className='text'>{array?.title}</h2>
+                <p className='text'>{array?.description}</p>
+                <p className='text'>${array?.price}</p>
+                <button className='text' >Comprar</button>
+            </div> 
+             
         </div>
         <Footer/>
         </div>

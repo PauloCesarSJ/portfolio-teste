@@ -12,7 +12,7 @@ import "./style/style.css"
  
 
 export function App() {
-  const {data, isFetching} = useQuery<Repository[]>("repos", async () => {
+  const {data} = useQuery<Repository[]>("repos", async () => {
     const response = await axios.get("https://fakestoreapi.com/products/");
     return response.data;
 } ) 

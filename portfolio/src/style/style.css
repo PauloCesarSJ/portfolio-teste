@@ -226,23 +226,71 @@
 }
 
 .FakeStore {
-  display: flex;
-  flex-direction: column;
+  margin-top: 5%;
 }
 .FakeStore div {
   text-align: center;
 }
 .FakeStore div img {
-  width: 85%;
   height: 30rem;
 }
-.FakeStore ul {
-  margin: 3.5rem 0;
+.FakeStore #card-loja {
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.FakeStore ul img {
-  width: 25%;
+.FakeStore #card-loja div {
+  margin: 5% 0;
+  width: 35%;
+}
+.FakeStore #card-loja div ul {
+  border: 5px solid black;
+  margin: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.FakeStore #card-loja div ul img {
+  margin-top: 10%;
+  width: 35%;
+  height: 50%;
+}
+.FakeStore #lojaBUtton {
+  background-color: #FCC2FC;
+  font-size: 15px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+}
+.FakeStore #lojaBUtton:hover {
+  cursor: pointer;
 }
 
+@media (max-width: 771px) {
+  div img {
+    width: 90% !important;
+    height: 60% !important;
+  }
+  #card-loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #card-loja div {
+    width: 60% !important;
+  }
+  #card-loja div ul {
+    border: none !important;
+    margin: 0px;
+  }
+  #card-loja div ul img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
 .MenuStore {
   display: flex;
   justify-content: space-between;
@@ -256,4 +304,45 @@
 }
 .MenuStore button:hover {
   cursor: pointer;
+}
+@media (max-width: 770px) {
+  .MenuStore {
+    flex-direction: column !important;
+  }
+  .MenuStore h3 a {
+    font-size: 15px;
+  }
+  .MenuStore button {
+    margin: 1% !important;
+  }
+}
+
+.paginaLoja {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 5%;
+}
+.paginaLoja div {
+  text-align: center;
+  max-width: 50%;
+}
+.paginaLoja div button {
+  background-color: #F7C8E0;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem;
+}
+.paginaLoja div button:hover {
+  cursor: pointer;
+  background-color: #ebb4d0;
+}
+.paginaLoja img {
+  width: 25%;
+}
+@media (max-width: 770px) {
+  .paginaLoja img {
+    width: 50% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

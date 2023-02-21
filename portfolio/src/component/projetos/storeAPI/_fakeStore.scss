@@ -1,17 +1,72 @@
 .FakeStore {
-    display: flex;
-    flex-direction: column;
+    margin-top: 5%;
     div{
         text-align: center;
         img{
-            width: 85%;
             height: 30rem;
         }
     }
-    ul{
-        margin: 3.5rem 0;
-        img{
-            width:25%;
+    #card-loja{
+        margin-top: 15%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div{
+            margin: 5% 0;
+            width: 35%;
+            ul{
+                border: 5px solid black;
+                margin: 10px;
+                height: 100%;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    margin-top: 10%;
+                    width: 35%;
+                    height: 50%;
+                }
+            }
+        }
+    } #lojaBUtton{
+        background-color: #FCC2FC;
+        font-size: 15px;
+        padding: 1rem;
+        border-radius: 10px;
+        border: none;
+        text-transform: uppercase;
+        &:hover{
+            cursor:pointer;
         }
     }
-}
+    }
+    @media( max-width:771px ){
+        div{
+           img{
+            width: 90% !important;
+            height: 60% !important;
+           }
+        }
+        #card-loja{
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                width: 60% !important;
+                ul{
+                    border: none !important; 
+                    margin: 0px;
+                   img{
+                    width: 100% !important;
+                    height: auto !important;
+                   }
+                }
+            }
+        }
+    }
