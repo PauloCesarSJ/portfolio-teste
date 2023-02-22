@@ -193,7 +193,7 @@
 
 .Contato {
   display: block;
-  margin: 0 30%;
+  margin: 5% 30%;
 }
 .Contato div {
   display: block;
@@ -215,14 +215,28 @@
   cursor: pointer;
 }
 
+.Projetos {
+  text-align: center;
+  margin: 5% 10%;
+}
+.Projetos div a img {
+  max-width: 60%;
+}
+
 .SobreMim {
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+.SobreMim a {
+  margin-top: 5%;
+  font-size: 160%;
+  align-self: center;
+}
 .SobreMim div {
-  display: flex;
-  margin: 0 8rem;
+  max-width: 70%;
+  align-self: center;
 }
 
 .FakeStore {
@@ -291,6 +305,17 @@
     height: auto !important;
   }
 }
+#buttonDeRetorno button {
+  font-size: 3rem;
+  background-color: #E3DFFD;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+}
+#buttonDeRetorno:hover {
+  cursor: pointer;
+}
+
 .MenuStore {
   display: flex;
   justify-content: space-between;

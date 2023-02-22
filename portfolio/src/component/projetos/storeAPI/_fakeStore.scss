@@ -70,3 +70,15 @@
             }
         }
     }
+#buttonDeRetorno{
+    button{
+        font-size: 3rem;
+        background-color:#E3DFFD ;
+        border: none;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

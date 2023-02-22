@@ -5,6 +5,7 @@ import MenuStore from "./menuStore";
 import { Repository } from "./index";
 import { useEffect } from "react";
 import UserLocalStorageState from "../../menu/darkMode";
+import { BsArrowClockwise } from "react-icons/bs";
 
 
 
@@ -71,6 +72,7 @@ export  function FakeStore () {
                     </div>
                 </ul>    
             </div>
+           <a href="/Projetos" id="buttonDeRetorno"><button><BsArrowClockwise/></button></a> 
             <Footer/>
         </div>
     )

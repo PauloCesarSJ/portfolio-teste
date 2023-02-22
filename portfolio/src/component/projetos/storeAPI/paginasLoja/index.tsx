@@ -19,7 +19,6 @@ function PaginasLoja () {
     } ) 
     
     var array = data?.find(element => element.id === current) 
-    console.log(array)
 
     
    
