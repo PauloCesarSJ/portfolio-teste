@@ -44,18 +44,18 @@ function AbrirTrabalhosMobile (event:any) {
                 </div>
 
                 <div id="homeTrabalhos">
-                    <h3 className="text">Mostruario</h3>
+                    <h3 className="text">Mostruario:</h3>
                     <button className="text" onClick={AbrirTrabalhosMobile} value="primeiro">x</button>
 
-                    <samp className={Estado1} id="samphome1"><a  href="/Projetos/fakeStore"><img src="/img/capsulewardrobeforminimalist.png" alt="Banner-minimalista-roupas" /></a></samp>
 
                     <button className="text" onClick={AbrirTrabalhosMobile} value="segundo">x</button>
 
-                    <samp className={Estado2}  id="samphome2"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
 
                     <button className="text" onClick={AbrirTrabalhosMobile} value="terceiro">x</button>
 
-                    <samp className={Estado3}  id="samphome3"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
+                        <samp className={Estado1} id="samphome1"><a  href="/Projetos/fakeStore"><img src="/img/capsulewardrobeforminimalist.png" alt="Banner-minimalista-roupas" /></a></samp>
+                        <samp className={Estado2}  id="samphome2"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
+                        <samp className={Estado3}  id="samphome3"><a  href="/"><img src="img/EmBreve.png" alt="EM BREVE" /></a></samp>
                 </div>
     
             </div> 

@@ -40,7 +40,7 @@
 
 
 #homeTrabalhos{
-    margin-top: 6rem;
+    margin-top: 6.5rem;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -67,19 +67,24 @@
     @media(max-width:767px) {
         flex-direction: column;
         margin: 1rem;
-        #samphome1{
-            margin-bottom: 17em;
-        }
-        #samphome3{
-            margin-top:17em;
-        }
+        
       samp{
+        margin-top: 5rem;
         position: absolute;
-        height: 4rem;
+        height: 5.5rem;
         display: none;
       }
+      #samphome2{
+        text-align: center;
+        margin-top: 15rem;
+      }
+      #samphome3{
+        margin-top: 25rem;
+      }
       button{
-        margin-top: 2rem;
+        margin-top: 4rem;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         width: 10%;
         background-color: transparent;

@@ -25,6 +25,9 @@
         width: 25%;
     }
     @media(max-width: 770px){
+        margin-top: 10%;
+        align-items: center;
+        flex-direction: column;
         img{
             width: 50% !important;
         }

@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCart2 } from "react-icons/bs";
 
 function MenuStore () {
 
@@ -11,6 +12,9 @@ function MenuStore () {
                 <button>Mulheres</button>
                 <button>Crianças</button>
                 <button>Promação</button>
+            </div>
+            <div>
+                <button id="Cart"><BsCart2/></button>
             </div>
             
         </div>

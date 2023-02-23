@@ -58,15 +58,13 @@
   color: white;
 }
 .darkMode #buttonDarkMode {
-  font-size: 20px;
   display: none !important;
+  border: none !important;
 }
 
 .lightmode #buttonLightmode {
-  font-size: 20px;
   display: none !important;
   border: none !important;
-  background-color: white;
 }
 
 .text {
@@ -117,7 +115,7 @@
 }
 
 #homeTrabalhos {
-  margin-top: 6rem;
+  margin-top: 6.5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -143,19 +141,21 @@
     flex-direction: column;
     margin: 1rem;
   }
-  #homeTrabalhos #samphome1 {
-    margin-bottom: 17em;
-  }
-  #homeTrabalhos #samphome3 {
-    margin-top: 17em;
-  }
   #homeTrabalhos samp {
+    margin-top: 5rem;
     position: absolute;
-    height: 4rem;
+    height: 5.5rem;
     display: none;
   }
+  #homeTrabalhos #samphome2 {
+    text-align: center;
+    margin-top: 15rem;
+  }
+  #homeTrabalhos #samphome3 {
+    margin-top: 25rem;
+  }
   #homeTrabalhos button {
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     width: 10%;
     background-color: transparent;
@@ -189,6 +189,15 @@
   .footer div a button {
     font-size: 20px;
   }
+}
+
+.BUttondark :first-child {
+  font-size: 20px;
+  padding: 1rem;
+}
+.BUttondark :last-child {
+  font-size: 20px;
+  padding: 1rem;
 }
 
 .Contato {
@@ -321,6 +330,9 @@
   justify-content: space-between;
   text-transform: uppercase;
 }
+.MenuStore #Cart {
+  font-size: 25px;
+}
 .MenuStore button {
   margin: 1rem;
   background-color: transparent;
@@ -367,6 +379,11 @@
   width: 25%;
 }
 @media (max-width: 770px) {
+  .paginaLoja {
+    margin-top: 10%;
+    align-items: center;
+    flex-direction: column;
+  }
   .paginaLoja img {
     width: 50% !important;
   }
