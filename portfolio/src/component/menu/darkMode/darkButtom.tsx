@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import UserLocalStorageState from "./index";
-import {BiMoon, BiSun} from "react-icons/bi"
 
 
 

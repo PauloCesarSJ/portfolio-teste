@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {App} from './App';
-import {BrowserRouter} from "react-router-dom"
+import { HashRouter} from "react-router-dom"
 import { QueryClientProvider } from 'react-query';
 import { queryClient } from './component/queryClient/queryClient';
 
@@ -11,11 +11,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <QueryClientProvider client={queryClient}>
-        <App />
+        <App/>
       </QueryClientProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
