@@ -24,7 +24,7 @@ export function SobreMim () {
                         pytom ou c em estudos na área de astronomia.
                     </h3>
                 </div>
-                <a className="text"><BsFileEarmarkArrowDown/></a>
+                <a href="/" className="text"><BsFileEarmarkArrowDown/></a>
             </div>
             <Footer/>
         </div>

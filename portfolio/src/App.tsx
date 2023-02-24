@@ -1,12 +1,13 @@
-import axios from 'axios';
-import { useQuery } from 'react-query';
-import { Routes, Route } from 'react-router-dom';
-import Contato from './component/pages/contato';
-import Home from './component/pages/home/home';
-import { Projetos } from './component/pages/projetos';
-import { SobreMim } from './component/pages/sobremIm/sobreMim';
-import { FakeStoreManager, Repository } from './component/projetos/storeAPI';
-import PaginasLoja from './component/projetos/storeAPI/paginasLoja';
+
+import axios from "axios";
+import { useQuery } from "react-query";
+import { Routes, Route } from "react-router";
+import Contato from "./component/pages/contato";
+import Home from "./component/pages/home/home";
+import { Projetos } from "./component/pages/projetos";
+import { SobreMim } from "./component/pages/sobremIm/sobreMim";
+import { Repository, FakeStoreManager } from "./component/projetos/storeAPI";
+import PaginasLoja from "./component/projetos/storeAPI/paginasLoja";
 import "./style/style.css"
 
  
@@ -20,7 +21,7 @@ export function App() {
  return (
   <div>
         <Routes>
-        <Route path="" element={<Home/>} />;
+        <Route path="/" element={<Home/>} />;
         <Route path="/Projetos" element={<Projetos/>} />;
         <Route path="/Contato" element={<Contato/>} />;
         <Route path="/SobreMim" element={<SobreMim/>} />;

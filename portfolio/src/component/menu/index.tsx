@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import BUttondark from "./darkMode/darkButtom";
 import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 
@@ -25,9 +25,9 @@ function Menu () {
             <nav className={Estado}>
                 <div>
                 <a href="/" className="text">home</a>
-                <a href="/Projetos" className="text">projetos</a>
-                <a href="/Contato" className="text">contato</a>
-                <a href="/SobreMim" className="text">sobre</a>
+                <a href="#/Projetos" className="text">projetos</a>
+                <a href="#/Contato" className="text">contato</a>
+                <a href="#/SobreMim" className="text">sobre</a>
                 </div>
             </nav> 
             <button onClick={Abremenu} className="buttonMenu">
